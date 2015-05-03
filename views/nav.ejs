@@ -1,0 +1,57 @@
+<style>
+	<% if (page === "professional") { %>
+			#professional > a > h1 {
+				color: #eee;
+			}
+			#technical > a > h1 {
+				color: #888;
+			}
+			#personal > a > h1 {
+				color: #888;
+			}
+	<% } %>
+		<% if (page === "technical") { %>
+			#professional > a > h1 {
+				color: #888;
+			}
+			#technical > a > h1 {
+				color: #eee;
+			}
+			#personal > a > h1 {
+				color: #888;
+			}
+	<% } %>
+		<% if (page === "personal") { %>
+			#professional > a > h1 {
+				color: #888;
+			}
+			#technical > a > h1 {
+				color: #888;
+			}
+			#personal > a > h1 {
+				color: #eee;
+			}
+	<% } %>
+%>
+</style>
+
+<div class="nav">
+	<div class="nav-elt">
+		<img src="">
+	</div>
+	<div class="nav-elt" id="personal">
+		<a href="/Personal">
+			<h1 class="inline">Personal</h1>
+		</a>
+	</div>
+	<div class="nav-elt" id="professional">
+		<a href="Professional">
+			<h1 class="inline">Professional</h1>	
+		</a>
+	</div>
+	<div class="nav-elt" id="technical">
+		<a href="Technical">
+			<h1 class="inline">Technical</h1>	
+		</a>
+	</div>
+</div>
