@@ -34,6 +34,10 @@ app.get('/personal', function (req, res) {
   res.render("personal", {page: "personal"});
 });
 
+app.get('/technical', function (req, res) {
+  res.render("technical", {page: "technical"});
+});
+
 //app.use('/', routes);
 app.use('/users', users);
 
